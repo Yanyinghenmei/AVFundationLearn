@@ -13,6 +13,8 @@
 		041F44E6205CAC3E00DFFF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041F44E5205CAC3E00DFFF75 /* Assets.xcassets */; };
 		041F44E9205CAC3E00DFFF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041F44E7205CAC3E00DFFF75 /* LaunchScreen.storyboard */; };
 		041F44EC205CAC3E00DFFF75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F44EB205CAC3E00DFFF75 /* main.m */; };
+		041F44F4205D05C600DFFF75 /* FileOutCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F44F3205D05C600DFFF75 /* FileOutCaptureViewController.m */; };
+		048A733420638FF000CB1F15 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048A733320638FF000CB1F15 /* PlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		041F44E8205CAC3E00DFFF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041F44EA205CAC3E00DFFF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041F44EB205CAC3E00DFFF75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		041F44F2205D05C600DFFF75 /* FileOutCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileOutCaptureViewController.h; sourceTree = "<group>"; };
+		041F44F3205D05C600DFFF75 /* FileOutCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileOutCaptureViewController.m; sourceTree = "<group>"; };
+		048A733220638FF000CB1F15 /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		048A733320638FF000CB1F15 /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				041F44DD205CAC3E00DFFF75 /* AppDelegate.m */,
 				041F44DF205CAC3E00DFFF75 /* ViewController.h */,
 				041F44E0205CAC3E00DFFF75 /* ViewController.m */,
+				041F44F2205D05C600DFFF75 /* FileOutCaptureViewController.h */,
+				041F44F3205D05C600DFFF75 /* FileOutCaptureViewController.m */,
+				048A733220638FF000CB1F15 /* PlayerViewController.h */,
+				048A733320638FF000CB1F15 /* PlayerViewController.m */,
 				041F44E2205CAC3E00DFFF75 /* Main.storyboard */,
 				041F44E5205CAC3E00DFFF75 /* Assets.xcassets */,
 				041F44E7205CAC3E00DFFF75 /* LaunchScreen.storyboard */,
@@ -142,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041F44F4205D05C600DFFF75 /* FileOutCaptureViewController.m in Sources */,
 				041F44E1205CAC3E00DFFF75 /* ViewController.m in Sources */,
 				041F44EC205CAC3E00DFFF75 /* main.m in Sources */,
 				041F44DE205CAC3E00DFFF75 /* AppDelegate.m in Sources */,
+				048A733420638FF000CB1F15 /* PlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

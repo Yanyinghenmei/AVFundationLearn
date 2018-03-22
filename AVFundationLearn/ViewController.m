@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import "FileOutCaptureViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
@@ -16,13 +19,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+ 
+    
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)fileOutCaptureClick:(id)sender {
+    [self presentViewController:[FileOutCaptureViewController new] animated:true completion:nil];
+}
+
+
+
+
+
+
+- (void)speakWithString:(NSString *)string {
+    AVSpeechSynthesizer *synthesizer = [AVSpeechSynthesizer new];
+    AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:string];
+    // 语言类别, 不能识别返回nil
+    AVSpeechSynthesisVoice *voiceType = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-CN"];
+    if (!voiceType) {
+        NSLog(@"language indentifier is wrong");
+    }
+    utterance.voice = voiceType;
+    // utterance.rate *= 1.2;
+    [synthesizer speakUtterance:utterance];
+}
+
+- (IBAction)speakClick:(id)sender {
+    _textField.text.length?[self speakWithString:_textField.text]:NSLog(@"error: no content");
 }
 
 
