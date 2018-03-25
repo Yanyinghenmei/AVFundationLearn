@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,6 +40,14 @@
                                 <state key="normal" title="file out video capture"/>
                                 <connections>
                                     <action selector="fileOutCaptureClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RLJ-v1-yyp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVu-6H-NKA">
+                                <rect key="frame" x="150" y="408" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ZYCapture"/>
+                                <connections>
+                                    <action selector="zyCapture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMC-Zh-9uX"/>
                                 </connections>
                             </button>
                         </subviews>

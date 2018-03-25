@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "FileOutCaptureViewController.h"
+#import "ZYCaptureViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
@@ -27,10 +28,17 @@
 
 
 - (IBAction)fileOutCaptureClick:(id)sender {
-    [self presentViewController:[FileOutCaptureViewController new] animated:true completion:nil];
+    [self presentViewController:[FileOutCaptureViewController new]
+                       animated:true completion:nil];
 }
 
 
+- (IBAction)zyCapture:(id)sender {
+    ZYCaptureViewController *capVC = [ZYCaptureViewController new];
+    capVC.maxRecordTime = 3;
+    [self presentViewController:capVC
+                       animated:true completion:nil];
+}
 
 
 

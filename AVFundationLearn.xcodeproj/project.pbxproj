@@ -15,6 +15,8 @@
 		041F44EC205CAC3E00DFFF75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F44EB205CAC3E00DFFF75 /* main.m */; };
 		041F44F4205D05C600DFFF75 /* FileOutCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F44F3205D05C600DFFF75 /* FileOutCaptureViewController.m */; };
 		048A733420638FF000CB1F15 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048A733320638FF000CB1F15 /* PlayerViewController.m */; };
+		655E87FA206688CF00D213C8 /* ZYCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655E87F9206688CF00D213C8 /* ZYCaptureViewController.m */; };
+		655E87FD206689D000D213C8 /* ZYCaptureDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 655E87FC206689D000D213C8 /* ZYCaptureDeviceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		041F44F3205D05C600DFFF75 /* FileOutCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileOutCaptureViewController.m; sourceTree = "<group>"; };
 		048A733220638FF000CB1F15 /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		048A733320638FF000CB1F15 /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		655E87F8206688CF00D213C8 /* ZYCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCaptureViewController.h; sourceTree = "<group>"; };
+		655E87F9206688CF00D213C8 /* ZYCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCaptureViewController.m; sourceTree = "<group>"; };
+		655E87FB206689D000D213C8 /* ZYCaptureDeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCaptureDeviceManager.h; sourceTree = "<group>"; };
+		655E87FC206689D000D213C8 /* ZYCaptureDeviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCaptureDeviceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,7 @@
 		041F44D0205CAC3E00DFFF75 = {
 			isa = PBXGroup;
 			children = (
+				655E87F72066889F00D213C8 /* ZYCapture */,
 				041F44DB205CAC3E00DFFF75 /* AVFundationLearn */,
 				041F44DA205CAC3E00DFFF75 /* Products */,
 			);
@@ -79,6 +86,17 @@
 				041F44EB205CAC3E00DFFF75 /* main.m */,
 			);
 			path = AVFundationLearn;
+			sourceTree = "<group>";
+		};
+		655E87F72066889F00D213C8 /* ZYCapture */ = {
+			isa = PBXGroup;
+			children = (
+				655E87F8206688CF00D213C8 /* ZYCaptureViewController.h */,
+				655E87F9206688CF00D213C8 /* ZYCaptureViewController.m */,
+				655E87FB206689D000D213C8 /* ZYCaptureDeviceManager.h */,
+				655E87FC206689D000D213C8 /* ZYCaptureDeviceManager.m */,
+			);
+			path = ZYCapture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +172,11 @@
 			files = (
 				041F44F4205D05C600DFFF75 /* FileOutCaptureViewController.m in Sources */,
 				041F44E1205CAC3E00DFFF75 /* ViewController.m in Sources */,
+				655E87FA206688CF00D213C8 /* ZYCaptureViewController.m in Sources */,
 				041F44EC205CAC3E00DFFF75 /* main.m in Sources */,
 				041F44DE205CAC3E00DFFF75 /* AppDelegate.m in Sources */,
 				048A733420638FF000CB1F15 /* PlayerViewController.m in Sources */,
+				655E87FD206689D000D213C8 /* ZYCaptureDeviceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
