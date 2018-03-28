@@ -17,9 +17,6 @@
 #pragma clang diagnostic ignored"-Wdeprecated-declarations"
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:mediaType];
 #pragma clang diagnostic pop
-//    if (mediaType == AVMediaTypeAudio) {
-//        return devices.firstObject;
-//    }
     
     for (AVCaptureDevice *device in devices) {
         if (device.position == position) {

@@ -27,6 +27,8 @@
     playerLayer.frame = playView.bounds;
     [playView.layer addSublayer:playerLayer];
     
+    NSLog(@"视频信息: %@", [self getVideoInfoWithSourceUrl:_videoUrl]);
+    
     [self.player play];
 }
 
@@ -43,6 +45,18 @@
 
 - (void)dealloc {
     _player = nil;
+}
+    
+- (NSDictionary *)getVideoInfoWithSourceUrl:(NSURL *)url{
+    
+    AVURLAsset * asset = [AVURLAsset assetWithURL:url];
+    CMTime time = [asset duration];
+    double seconds = CMTimeGetSeconds(time);
+    
+    NSInteger fileSize = [[NSFileManager defaultManager] attributesOfItemAtPath:url.absoluteString error:nil].fileSize;
+    
+    return @{@"size" : @(fileSize),
+             @"duration" : @(seconds)};
 }
 
 @end
